@@ -1,0 +1,290 @@
+@font-face {
+  font-family: 'nyt-franklin';
+  font-weight: 400;
+  font-style: normal;
+  src: url("../fonts/franklin-normal-400.woff2") format('woff2');
+}
+@font-face {
+  font-family: 'nyt-franklin';
+  font-weight: 600;
+  font-style: normal;
+  src: url("../fonts/franklin-normal-600.woff2") format('woff2');
+}
+@font-face {
+  font-family: 'nyt-karnak';
+  font-weight: 400;
+  font-style: normal;
+  src: url("../fonts/karnak-normal-400.woff2") format('woff2');
+}
+@font-face {
+  font-family: 'nyt-karnakcondensed';
+  font-weight: 700;
+  font-style: normal;
+  src: url("../fonts/karnakcondensed-normal-700.woff2") format('woff2');
+}
+*
+{
+  margin: 0;
+  border: 0;
+  padding: 0;
+}
+div
+{
+  display: block;
+}
+h1
+{
+  display: block;
+  margin-block-start: .67em;
+  margin-block-end: 0.67em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+button
+{
+  text-align: center;
+  box-sizing: border-box;
+  padding-block: 1px;
+  padding-inline: 6px;
+}
+body
+{
+  background-color: rgb(227,227,225);
+}
+#container
+{
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 50px 42px 0;
+}
+#content
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+#werdleIcon
+{
+  background-image: url("../icons/werdle-icon.svg");
+  height: 80px;
+  margin-bottom: 16px;
+  display: block;
+  width: 100%;
+  text-align: center;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#werdleTitle
+{
+  font-size: 50px;
+  line-height: 52px;
+  font-family: "nyt-karnakcondensed";
+  font-weight: bold;
+  margin-bottom: 12px;
+  position: relative;
+  text-align: center;
+}
+#werdleSubtitle
+{
+  max-width: 375px;
+  font-size: 38px;
+  line-height: 44px;
+  margin-bottom: 36px;
+  font-family: "nyt-karnak";
+  text-align: center;
+  font-weight: 400;
+}
+#playButton
+{
+  width: 180px;
+  position: relative;
+  border: none;
+  height: 3em;
+  border-radius: 1.5em;
+  letter-spacing: .05em;
+  font-size: 16px;
+  font-family: "nyt-franklin";
+  line-height: 28px;
+  padding: 0 2em;
+  background: #000;
+  color: #fff;
+  margin: 0 10px 8px;
+  font-weight: 400;
+  text-transform: none;
+  overflow: visible;
+  cursor: pointer !important;
+  text-rendering: auto;
+  word-spacing: normal;
+  text-indent: 0px;
+  text-shadow: none;
+  text-align: center;
+  box-sizing: border-box;
+  padding-block: 1px;
+  padding-inline: 6px;
+}
+#buttonContainer
+{
+  margin-bottom: 28px;
+  flex-direction: row;
+}
+#dateContainer
+{
+  text-align: center;
+}
+#dateContainer h3
+{
+  font-size: 16px;
+  line-height: 20px;
+  display: block;
+  letter-spacing: .005em;
+  font-family: "nyt-franklin";
+  font-weight: 600;
+}
+#dateContainer p
+{
+  font-size: 14px;
+  line-height: 18px;
+  display: block;
+  letter-spacing: .005em;
+}
+#containerTwo
+{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+#header
+{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  padding: 0 16px;
+  height: 65px;
+  color: #000;
+  border-bottom: 1px solid #d3d6da;
+}
+#headerTitle
+{
+  flex-grow: 2;
+  font-family: "nyt-karnakcondensed";
+  font-weight: 700;
+  font-size: 28px;
+  letter-spacing: .01em;
+  text-align: left;
+  left: 0;
+  right: 0;
+  pointer-events: none;
+  position: relative;
+}
+#game
+{
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  height: calc(100%-65px);
+  display: flex;
+  flex-direction: column;
+}
+#boardContainer
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  overflow: unset;
+}
+#board
+{
+  width: 300px;
+  height: 360px;
+  display: grid;
+  grid-template-rows: repeat(6,1fr);
+  grid-gap: 5px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+.boardRow
+{
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 5px;
+}
+.tile
+{
+  border: 2px solid #d3d6da;
+  font-size: 1em;
+  font-family: "nyt-franklin";
+  width: 100%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 1;
+  font-weight: bold;
+  vertical-align: middle;
+  box-sizing: border-box;
+  color: #000;
+  text-transform: uppercase;
+  user-select: none;
+  height: 52px;
+}
+#keyboard
+{
+  height: 200px;
+  margin: 0 8px;
+  user-select: none;
+}
+.keyboardRow
+{
+  display: flex;
+  width: 100%;
+  margin: 0 auto 8px;
+  touch-action: manipulation;
+}
+.keyboardKey
+{
+  font-family: "nyt-franklin";
+  font-size: 1.25em;
+  font-weight: bold;
+  margin: 0 6px 0 0;
+  height: 58px;
+  border-radius: 4px;
+  user-select: none;
+  background-color: #d3d6da;
+  color: #000;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+}
+#keyboardSpacer
+{
+  flex: .5;
+}
+.bigKeyboardKey
+{
+  flex: 1.5;
+  font-size: 12px;
+  font-family: "nyt-franklin";
+  font-weight: bold;
+  margin: 0 6px 0 0;
+  height: 58px;
+  border-radius: 4px;
+  user-select: none;
+  background-color: #d3d6da;
+  color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+}

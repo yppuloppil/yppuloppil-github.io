@@ -1,0 +1,180 @@
+<html>
+  <head>
+    <title>Werdle!</title>
+    <link rel="icon" type="image/x-icon" href="assets/icons/werdle-favicon.ico">
+    <link rel="stylesheet" href="assets/CSS/werdle-style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="assets/scripts/werdle.js"></script>
+  </head>
+  <body>
+    <div id="container">
+      <div id="content">
+        <div id="werdleIcon"></div>
+        <h1 id="werdleTitle">Werdle</h1>
+        <h2 id="werdleSubtitle"><span>Get 6 Chances to guess a 5-letter word.</span></h2>
+        <div id="buttonContainer">
+          <button id="playButton">Play</button>
+        </div>
+        <div id="dateContainer">
+          <h3>May 15, 2024</h3>
+          <p>Made by Ali Pervaiz, for Angie Tran &lt;3</p>
+        </div>
+      </div>
+    </div>
+    <div id="containerTwo">
+      <header id="header">
+        <h1 id="headerTitle">Werdle</h1>
+      </header>
+      <main id="game">
+        <div id="boardContainer">
+          <div id="board">
+            <div class="boardRow">
+              <div style="animation-delay: 0ms;">
+                <div class="tile"></div>
+              </div>
+              <div style="animation-delay: 100ms;">
+                <div class="tile"></div>
+              </div>
+              <div style="animation-delay: 200ms;">
+                <div class="tile"></div>
+              </div>
+              <div style="animation-delay: 300ms;">
+                <div class="tile"></div>
+              </div>
+              <div style="animation-delay: 400ms;">
+                <div class="tile"></div>
+              </div>
+            </div>
+            <div class="boardRow">
+              <div style="animation-delay: 0ms;">
+                <div class="tile"></div>
+              </div>
+              <div style="animation-delay: 100ms;">
+                <div class="tile"></div>
+              </div>
+              <div style="animation-delay: 200ms;">
+                <div class="tile"></div>
+              </div>
+              <div style="animation-delay: 300ms;">
+                <div class="tile"></div>
+              </div>
+              <div style="animation-delay: 400ms;">
+                <div class="tile"></div>
+              </div>
+            </div>
+            <div class="boardRow">
+              <div style="animation-delay: 0ms;">
+                <div class="tile"></div>
+              </div>
+              <div style="animation-delay: 100ms;">
+                <div class="tile"></div>
+              </div>
+              <div style="animation-delay: 200ms;">
+                <div class="tile"></div>
+              </div>
+              <div style="animation-delay: 300ms;">
+                <div class="tile"></div>
+              </div>
+              <div style="animation-delay: 400ms;">
+                <div class="tile"></div>
+              </div>
+            </div>
+            <div class="boardRow">
+              <div style="animation-delay: 0ms;">
+                <div class="tile"></div>
+              </div>
+              <div style="animation-delay: 100ms;">
+                <div class="tile"></div>
+              </div>
+              <div style="animation-delay: 200ms;">
+                <div class="tile"></div>
+              </div>
+              <div style="animation-delay: 300ms;">
+                <div class="tile"></div>
+              </div>
+              <div style="animation-delay: 400ms;">
+                <div class="tile"></div>
+              </div>
+            </div>
+            <div class="boardRow">
+              <div style="animation-delay: 0ms;">
+                <div class="tile"></div>
+              </div>
+              <div style="animation-delay: 100ms;">
+                <div class="tile"></div>
+              </div>
+              <div style="animation-delay: 200ms;">
+                <div class="tile"></div>
+              </div>
+              <div style="animation-delay: 300ms;">
+                <div class="tile"></div>
+              </div>
+              <div style="animation-delay: 400ms;">
+                <div class="tile"></div>
+              </div>
+            </div>
+            <div class="boardRow">
+              <div style="animation-delay: 0ms;">
+                <div class="tile"></div>
+              </div>
+              <div style="animation-delay: 100ms;">
+                <div class="tile"></div>
+              </div>
+              <div style="animation-delay: 200ms;">
+                <div class="tile"></div>
+              </div>
+              <div style="animation-delay: 300ms;">
+                <div class="tile"></div>
+              </div>
+              <div style="animation-delay: 400ms;">
+                <div class="tile"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="keyboard">
+          <div class="keyboardRow">
+            <button type="button" class="keyboardKey">q</button>
+            <button type="button" class="keyboardKey">w</button>
+            <button type="button" class="keyboardKey">e</button>
+            <button type="button" class="keyboardKey">r</button>
+            <button type="button" class="keyboardKey">t</button>
+            <button type="button" class="keyboardKey">y</button>
+            <button type="button" class="keyboardKey">u</button>
+            <button type="button" class="keyboardKey">i</button>
+            <button type="button" class="keyboardKey">o</button>
+            <button type="button" class="keyboardKey">p</button>
+          </div>
+          <div class="keyboardRow">
+            <div id="keyboardSpacer"></div>
+            <button type="button" class="keyboardKey">a</button>
+            <button type="button" class="keyboardKey">s</button>
+            <button type="button" class="keyboardKey">d</button>
+            <button type="button" class="keyboardKey">f</button>
+            <button type="button" class="keyboardKey">g</button>
+            <button type="button" class="keyboardKey">h</button>
+            <button type="button" class="keyboardKey">j</button>
+            <button type="button" class="keyboardKey">k</button>
+            <button type="button" class="keyboardKey">l</button>
+            <div id="keyboardSpacer"></div>
+          </div>
+          <div class="keyboardRow">
+            <button type="button" class="bigKeyboardKey">Enter</button>
+            <button type="button" class="keyboardKey">z</button>
+            <button type="button" class="keyboardKey">x</button>
+            <button type="button" class="keyboardKey">c</button>
+            <button type="button" class="keyboardKey">v</button>
+            <button type="button" class="keyboardKey">b</button>
+            <button type="button" class="keyboardKey">n</button>
+            <button type="button" class="keyboardKey">m</button>
+            <button type="button" class="bigKeyboardKey">
+              <svg height="20" viewBox="0 0 24 24" width="20">
+                <path fill="#000" d="M22 3H7c-.69 0-1.23.35-1.59.88L0 12l5.41 8.11c.36.53.9.89 1.59.89h15c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H7.07L2.4 12l4.66-7H22v14zm-11.59-2L14 13.41 17.59 17 19 15.59 15.41 12 19 8.41 17.59 7 14 10.59 10.41 7 9 8.41 12.59 12 9 15.59z"></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
