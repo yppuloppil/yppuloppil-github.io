@@ -45,7 +45,7 @@ $(document).ready(function(){
           function() 
           {
             alert("GOOD JOB YAYAYAYA");
-            location.reload(true);
+            window.location.href = './index2.html';
           }, 500);
         }
         if(row==6)

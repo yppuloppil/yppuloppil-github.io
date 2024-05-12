@@ -107,7 +107,8 @@ $(document).ready(function(){
     }
     if(left==0)
     {
-      alert("YAY U DID IT!!!!"); 
+      alert("YAY U DID IT!!!!");
+      window.location.href = './index3.html';
     }
   });
 });
