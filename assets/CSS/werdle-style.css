@@ -205,7 +205,7 @@ body
 }
 #board
 {
-  width: 300px;
+  width: 360px;
   height: 360px;
   display: grid;
   grid-template-rows: repeat(6,1fr);
@@ -216,7 +216,7 @@ body
 .boardRow
 {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(6, 1fr);
   grid-gap: 5px;
 }
 .tile

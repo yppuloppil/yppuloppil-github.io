@@ -6,7 +6,7 @@ $(document).ready(function(){
     $("body").css("background-color","white");
     var row = 0;
     var col = 0;
-    var ans = "adore";
+    var ans = "hunbun";
     var guess = "";
     $("body").keyup(function(event){
       if(event.key=="Backspace"&&col!=0)
@@ -15,18 +15,18 @@ $(document).ready(function(){
        col--;
        $("#board").children().eq(row).children().eq(col).children().eq(0).text("");
       }
-      else if(event.key>='a'&&event.key<='z'&&col<5)
+      else if(event.key>='a'&&event.key<='z'&&col<6)
       {
         guess += event.key;
         $("#board").children().eq(row).children().eq(col).children().eq(0).text(event.key);
         col++; 
       }
-      else if(event.key=="Enter"&&col==5)
+      else if(event.key=="Enter"&&col==6)
       {
-        for(let i = 0; i < 5; i++)
+        for(let i = 0; i < 6; i++)
         {
           var color = "#787c7e";
-          for(let j = 0; j < 5; j++) if(ans[j]==guess[i]&&ans[j]!=guess[j]) color = "#c9b458"; 
+          for(let j = 0; j < 6; j++) if(ans[j]==guess[i]&&ans[j]!=guess[j]) color = "#c9b458"; 
           if(guess[i]==ans[i]) color = "#6aaa6b";
           $("#board").children().eq(row).children().eq(i).children().eq(0).css("background-color",color);
           $("#board").children().eq(row).children().eq(i).children().eq(0).css("color","white");
